@@ -1,0 +1,30 @@
+editor: codium
+
+templates:
+  - .templates
+snippets:
+  - .snippets
+
+folders:
+  - path: ./notes
+    type: note
+    template: note
+    file: '{{format "yyyyMMdd" now}}_{{slug title}}.md'
+  
+  - path: ./dailies
+    type: note
+    template: daily
+    file: '{{format "yyyyMMdd" now}}.md'
+
+  - path: ./sources
+    type: note
+    template: source
+    file: '{{citationEntry.citation-key}}.md'
+
+# citations:
+#   autocomplete: true
+#   bibliography: ./references/bibliography.json
+#   folders:
+#     - ./sources
+
+pandocPreview: true
