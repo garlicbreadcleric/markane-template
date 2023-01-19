@@ -1,0 +1,1 @@
+{{format "yyyy-MM-dd HH:mm" now}}
